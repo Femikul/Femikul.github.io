@@ -1,0 +1,9 @@
+@font-face {
+font-family: "ralewayFont";
+src: url('light.ttf');
+}
+
+body {
+font-family: "ralewayFont;"
+}
+
