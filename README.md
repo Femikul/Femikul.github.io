@@ -9,5 +9,7 @@ I have proven ability to collaborate effectively with other developers, optimizi
 I'm currently searching for a new career opportunity in the web development industry as a Senior front end developer.
 
 Contact Me
+
 E-mail- showunmifemi7@gmail.com
+
 Phone no/whatsapp - +234 8104261674   
