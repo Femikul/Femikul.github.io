@@ -68,10 +68,11 @@
  }
  
  .htm {width: 90%; background-color: #34568B;}
- .css {width: 80%; background-color: #88B04B;}
- .java {width: 85%; background-color: #F7CAC9;}
+ .css {width: 86%; background-color: #88B04B;}
+ .next {width: 80%; background-color: #F7CAC9;}
  .react{width: 80%; background-color: #FF6F61;}
- 
+ .tailwind{width: 86%; background-color: #023047;}
+
  .card {
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
  max-width: 400px;
