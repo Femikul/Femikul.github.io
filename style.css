@@ -1,9 +1,141 @@
-@font-face {
-font-family: "ralewayFont";
-src: url('light.ttf');
+* {
+    box-sizing: border-box;
+ }
+ 
+ body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+ }
+ 
+ main {
+ flex: 1 0 auto;
+ }
+ 
+ html, body {  
+ margin: 0;
+ padding: 0;
+ }
+ 
+ 
+ 
+ 
+ li a {
+     display: block;
+   float: right;
+ }
+ 
+ #collapsibleNavbar > ul > li > a {
+ padding: 0.7em;
+ }
+ 
+ .responsive {
+ max-width: 1500px;
+ width: 100%;
+ height: 100%;
+ max-height: 500px;
+ }
+ 
+ .container-xxl {
+ margin: 0;
+ padding: 0;
+ }
+ 
+ html > body > .container-xxl {
+ margin: 0;
+ padding: 0;
+ }
+ 
+ #demo1 {
+ position: absolute;
+ top: 40%;
+ left: 30%;
+ }
+ 
+ 
+ .container {
+ width: 100%;
+ border: #ddd;
+ }
+ 
+ .skills {
+ text-align: right;
+ padding-top: 1Opx;
+ padding-bottom: 10%px;
+ color: white;
+ }
+ 
+ .htm {width: 90%; background-color: #34568B;}
+ .css {width: 80%; background-color: #88B04B;}
+ .java {width: 85%; background-color: #F7CAC9;}
+ .react{width: 80%; background-color: #FF6F61;}
+ 
+ .card {
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ max-width: 400px;
+ margin: auto;
+ text-align: center;
+ }
+ 
+ .title {
+ font-size: 18px;
+ }
+ 
+ button {
+ border: none;
+ outline: 0;
+ display: inline-block;
+ padding: 8px;
+ color: white;
+ background-color: #000;
+ text-align: center;
+ cursor: pointer;
+ width: 100%;
+ font-size: 18px;
+ }
+ 
+ a {
+ text-decoration: none;
+ font-size: 22px;
+ color: black;
+ }
+ 
+ button:hover, a:hover {
+ opacity: 0.8;
+ }
+ 
+ .footer {
+ position: absolute;
+ left: 0;
+ bottom: 0px;
+ color: black;
+ width: 100%;
+ height: 9em;
+ text-align: center;
+ }
+ 
+ #download {
+    @media screen and (min-width: 600px) {
+        margin-left: 5%;
+    }
+
+    @media screen and (min-width: 650px) {
+        margin-left: 9%;
+    }
 }
 
-body {
-font-family: "ralewayFont;"
+.copyright {
+    position: absolute;
+    left: 0;
 }
+
+#darkmode {
+    font-size: x-large;
+    padding-left: 1em;
+    padding-bottom: 4px;
+}
+
+
 
