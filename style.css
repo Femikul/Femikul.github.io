@@ -128,7 +128,7 @@
 
 .copyright {
     position: absolute;
-    left: 0;
+    left: 2%;
 }
 
 #darkmode {
@@ -137,5 +137,8 @@
     padding-bottom: 4px;
 }
 
+.nav-link:hover {
+    border-bottom: 2px solid grey; /* Add your desired border style and color */
+}
 
-
+  
