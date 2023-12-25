@@ -104,7 +104,7 @@
   <hr class="bg-light" style="width: 70%;border: 1px solid;">
   <ul class="h4">
     <li>Dynamically blending youthfulness with experience, open to further tech development and training.</li>
-    <li>Dedicated to optimizing user experience and crafting responsive websites that excel across all devices.</li>
+    <li>Dedicated to optimizing user experience and crafting responsive web apps that excel across all devices.</li>
     <li>Proficient in writing adaptable code and collaborating efficiently within a team.</li>
     <li>Experienced in remote work and collaboration, utilizing version control systems like Git.</li>
     <li>Demonstrates proficiency in the English language.</li>
@@ -168,7 +168,7 @@
 
 <div id="contact" class="bg-light">
 <h2 style="text-decoration: underline solid;text-align: center;">My Contact Card</h2>
-<div class="card" id="contact-card bg-light">
+<div class="card" id="contact-card">
 
 <img src="i.jpg" style="width:100%;height:auto;">
 <div class="" id="contact-card1">
@@ -212,7 +212,7 @@
 </div><!-- Main container div -->
 
 <script>
-
+let isDarkMode = false
 function toggleDarkMode() {
     const newTheme = document.body.dataset.bsTheme === 'dark' ? 'light' : 'dark';
 
@@ -232,8 +232,9 @@ function toggleDarkMode() {
     const contactCard1 = document.getElementById('contact-card1');
     contactCard1.classList.toggle('bg-dark', newTheme === 'dark');
 
+    isDarkMode = !isDarkMode
     var img = document.getElementById('darkmode');
-      img.src = (img.src === 'moon.svg') ? 'sun.svg' : 'moon.svg';
+      img.src = (isDarkMode) ? 'sun.svg' : 'moon.svg';
 }
 
 

@@ -143,4 +143,9 @@
     border-bottom: 2px solid grey; /* Add your desired border style and color */
 }
 
+#contact-card, #contact {
+    max-width: 93%;
+    left: 5%;
+}
+
   
