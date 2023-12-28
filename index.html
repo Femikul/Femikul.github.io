@@ -65,7 +65,7 @@
 
 <main class="mb-5">
 <div id="about" class="container-fluid">
-  <h2><span class="display-6">A</span>bout</h2>
+  <h2><span class="display-6" style="font-weight: 600;">A</span>bout</h2>
   <hr class="bg-dark" style="width: 40%;border: 1px solid;">
     
   <p class="h3">&nbsp&nbsp&nbsp<span class="display-6">G</span>reetings! I'm Showunmi Femi, a results-driven front-end Engineer based in Lagos, Nigeria.
@@ -74,7 +74,7 @@
     . Let's innovate and achieve together!. </p><br>
 
 
-<h3><span class="display-6">E</span>ducation and Skills</h3> 
+<h3><span class="display-6" style="font-weight: 600;">E</span>ducation and Skills</h3> 
 <hr class="bg-dark" style="width: 45%;border: 1px solid;">
 <ul class="h4">
 <li>University of Ilorin, Bachelor of Science Statistics, Msc also loading..... </li>
@@ -84,7 +84,7 @@
 <br>   
 
 
-<h3><span class="display-6">P</span>rojects and Achievements</h3>
+<h3><span class="display-6" style="font-weight: 600;">P</span>rojects and Achievements</h3>
 <hr class="bg-dark" style="width: 50%;border: 1px solid;">
 <ul class="h4">
   
@@ -100,7 +100,7 @@
 
 <br><br>
 
-  <h2><span class="display-6">W</span>hat do I offer?</h2>
+  <h2><span class="display-6" style="font-weight: 600;">W</span>hat do I offer?</h2>
   <hr class="bg-light" style="width: 70%;border: 1px solid;">
   <ul class="h4">
     <li>Dynamically blending youthfulness with experience, open to further tech development and training.</li>
@@ -112,7 +112,7 @@
   
 <br>
 
-<h2><span class="display-6">M</span>y Skills</h2>
+<h2><span class="display-6" style="font-weight: 600;">M</span>y Skills</h2>
 <hr class="bg-dark" style="width:40%;border: 1px solid">
 <div class="container">
 <p>HTML</p>
@@ -140,7 +140,7 @@
 <br><br>
 
 
-<h2>Dashboard</h2>
+<h2><span class="display-6" style="font-weight: 600;">D</span>ashboard</h2>
 <hr class="bg-dark" style="width:25%;border: 1px solid">
 <div class="container p-5" style="background-color: #0090c7;">
 <div class="row text-white">
@@ -167,9 +167,8 @@
 </div><!-- About div -->
 
 <div id="contact" class="bg-light">
-<h2 style="text-decoration: underline solid;text-align: center;">My Contact Card</h2>
+<h2 style="text-align: center;border-bottom: 2px solid;max-width: 45%;margin-left: 35%;" class="text-center"><span class="display-6" style="font-weight: 600;">M</span>y Contact Card</h2>
 <div class="card" id="contact-card">
-
 <img src="i.jpg" style="width:100%;height:auto;">
 <div class="" id="contact-card1">
 <h2>Contact Me</h2>
@@ -211,61 +210,8 @@
 
 </div><!-- Main container div -->
 
-<script>
-let isDarkMode = false;
+<script src="script.js"></script>
 
-function toggleDarkMode() {
-    isDarkMode = true;
-    updateTheme();
-}
-
-function toggleLightMode() {
-    isDarkMode = false;
-    updateTheme();
-}
-
-function updateTheme() {
-    const newTheme = isDarkMode ? 'dark' : 'light';
-
-    document.body.dataset.bsTheme = newTheme;
-    const navElement = document.querySelector('nav');
-    navElement.classList.toggle('bg-dark', isDarkMode);
-
-    const bodyDiv = document.getElementById('body');
-    bodyDiv.classList.toggle('bg-dark', isDarkMode);
-
-    const contactDiv = document.getElementById('contact');
-    contactDiv.classList.toggle('bg-dark', isDarkMode);
-
-    const contactCard = document.getElementById('contact-card');
-    contactCard.classList.toggle('bg-dark', isDarkMode);
-
-    const contactCard1 = document.getElementById('contact-card1');
-    contactCard1.classList.toggle('bg-dark', isDarkMode);
-
-    var img = document.getElementById('darkmode');
-    img.src = isDarkMode ? 'sun.svg' : 'moon.svg';
-}
-function toggleManualMode() {
-    isDarkMode = !isDarkMode;
-    updateTheme();
-}
-// Check if the user prefers dark mode
-const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-
-// Function to handle changes in the user's preferred color scheme
-function handleDarkModeChange(event) {
-    isDarkMode = event.matches;
-    updateTheme();
-}
-
-// Attach the handler to the media query
-darkModeMediaQuery.addListener(handleDarkModeChange);
-
-// Initial check to see if the user currently prefers dark mode
-handleDarkModeChange(darkModeMediaQuery);
-
-</script>
 
 </body>
 </html>
