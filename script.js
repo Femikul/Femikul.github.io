@@ -44,7 +44,6 @@ function handleDarkModeChange(event) {
 }
 
 // Attach the handler to the media query
-// Add event listener for changes in dark mode preference
 darkModeMediaQuery.addEventListener('change', handleDarkModeChange);
 
 // Initial check to see if the user currently prefers dark mode
